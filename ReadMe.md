@@ -36,8 +36,7 @@ Project is a standard maven project see [Maven in 5 Minutes](https://maven.apach
 The project can be configured via spring boot application.properties, see file for further documentation.
 You should start two instances and configure them in a way set they find each other:
 
-1. -Dserver.port=99  -Dgame.local=http://localhost:99/api/v1  -Dgame.remote=http://localhost:100/api/v1 -Dgame.player-name=Bob
-2. -Dserver.port=100 -Dgame.local=http://localhost:100/api/v1 -Dgame.remote=http://localhost:99/api/v1 -Dgame.player-name=Barbara
+There is an application property file for the second service named **application-barbara.properties**, that you can use to connect to the default configuration.
 
 #### Design choices
 I wanted to try out Spring Boot and Thyme Leaf to provide a neat UI, instead of implementing a pure socket based solution.
